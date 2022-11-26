@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Fliter Web App</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bahianita&family=Fredericka+the+Great&family=Poppins:wght@200;400;600;900&family=Unica+One&display=swap" rel="stylesheet">
+   
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script> 
+
+</head>
+    <body style="background-image:url('mustache.jpg'); background-size: 700px;">
+       <center> <div id="support"></div>
+        <h1 id="heading">Face Filter</h1><table>
+        
+            <tr>
+                <th style="padding-left:5px;padding-right:2.5px; width:40%">
+                    <div id="cameraa">
+                        <center>
+                            <br>  <br>  <br>
+                        <div id="cam"></div>
+                        <br><br><hr><br><br>
+                        <button id="take_pic" onclick="save_pic()">Save</button></center>
+                    </div> 
+                    
+                    
+               
+                </th>
+                <th style="padding-left:2.5px;padding-right:2.5px;width:20%">
+                    
+                       <div id="images" ><center>
+                        <div id="img1" onclick="image1()" onmouseover="image11()" onmouseleave="image111()"><img src="mustache.png" style="height: 100px; width:100px"></div>
+                        <div id="img2" onclick="image2()" onmouseover="image22()" onmouseleave="image222()"><img src="nose.png"style="height: 100px; width:100px" ></div>
+                        <div id="img3" onclick="image3()" onmouseover="image33()" onmouseleave="image333()"><img src="lips.png"style="height: 100px; width:100px"></div>
+                        <div id="img4" onclick="image4()" onmouseover="image44()" onmouseleave="image444()"><img src="rabbit.png"style="height: 100px; width:100px"></div></center>
+                    </div>
+                </th>
+                
+            </tr>
+        </table>
+        </center>
+
+        <script src="main.js"></script>
+        <script src="main2.js"></script>
+    </body>
+    </html>
